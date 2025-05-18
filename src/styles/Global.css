@@ -3,11 +3,13 @@
 
 :root {
     --dark-berry: #1a001f;
-    --light-berry: #6b4c71f3;
+    --medium-berry: #45062e;
+    --light-berry: #451d4df3;
     --pastel-pink: #ffc1e3;
     --cute-lime: #b7de6ef5;
+    --cute-lime-fade: #b7de6eb7;
     --baby-blue: #b0ecf9ba;
-    --neon-pink: #df1d95e4;
-    --pink-glow: rgba(255, 185, 232, 0.641);
+    --neon-pink: #ff50bcac;
+    --pink-glow: #ffc1e3cb;
   }
   

@@ -65,7 +65,7 @@ export const Intro = () => {
           startIcon={<EmailRoundedIcon />}
           href="mailto:divya.soneji@hotmail.com"
         >
-          Email
+          Let's Connect !
         </Button>
       </FadeInSection>
     </div>

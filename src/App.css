@@ -2,7 +2,7 @@
 
 .App {
   font-family: "NTR";
-  background-color: var(--dark-berry);
+  background-image: linear-gradient(var(--medium-berry), var(--dark-berry));
   display: flex;
   margin: auto;
 }
