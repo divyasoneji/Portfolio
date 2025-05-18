@@ -1,0 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=NTR&display=swap');
+
+:root {
+    --dark-berry: #1a001f;
+    --midnight-magenta: #2b0033;
+    --deep-fuchsia: #3d004d;
+    --velvet-violet: #4f0066;
+    --berry-shadow: rgba(26, 0, 31, 0.7);
+  
+    --hot-pink: #ff1f8f;
+    --electric-pink: #ff4fc3;
+    --bubblegum-pink: #ff8fd6;
+    --pastel-pink: #ffc1e3;
+    --blush-white: #fff0f6;
+  
+    --neon-pink: #da0794;
+    --pink-glow: rgba(255, 0, 170, 0.15);
+  }
+  

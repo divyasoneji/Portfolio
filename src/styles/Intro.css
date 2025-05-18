@@ -1,0 +1,46 @@
+/* For PC Screen */
+#intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  max-width: 1000px;
+  padding-top: 200px;
+  min-height: 100vh;
+}
+
+.intro-title {
+  font-family: "NTR", sans-serif;
+  color: var(--pastel-pink);
+  font-size: 86px;
+}
+
+.intro-name {
+  font-family: "NTR", sans-serif;
+  color: var(--neon-pink);
+  font-weight: bold;
+  font-size: 86px;
+}
+
+.intro-name  [class*="blinkingCursor"] {
+  color: var(--pastel-pink) !important;
+}
+
+/* For Phone Screen */
+@media only screen and (max-width: 600px) {
+  #intro {
+    min-height: unset;
+    padding-left: unset;
+    padding-top: unset;
+    margin: 0;
+    align-items: center;
+  }
+
+  .intro-title {
+    font-size: 46px;
+  }
+  .intro-name {
+    font-size: 46px;
+  }
+}
