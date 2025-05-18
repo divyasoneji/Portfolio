@@ -3,18 +3,11 @@
 
 :root {
     --dark-berry: #1a001f;
-    --midnight-magenta: #2b0033;
-    --deep-fuchsia: #3d004d;
-    --velvet-violet: #4f0066;
-    --berry-shadow: rgba(26, 0, 31, 0.7);
-  
-    --hot-pink: #ff1f8f;
-    --electric-pink: #ff4fc3;
-    --bubblegum-pink: #ff8fd6;
+    --light-berry: #6b4c71f3;
     --pastel-pink: #ffc1e3;
-    --blush-white: #fff0f6;
-  
-    --neon-pink: #da0794;
-    --pink-glow: rgba(255, 0, 170, 0.15);
+    --cute-lime: #b7de6ef5;
+    --baby-blue: #b0ecf9ba;
+    --neon-pink: #df1d95e4;
+    --pink-glow: rgba(255, 185, 232, 0.641);
   }
   

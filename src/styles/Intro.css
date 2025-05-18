@@ -18,17 +18,48 @@
 
 .intro-name {
   font-family: "NTR", sans-serif;
-  color: var(--neon-pink);
+  color: var(--cute-lime);
   font-weight: bold;
   font-size: 86px;
 }
 
-.intro-name  [class*="blinkingCursor"] {
+.intro-name [class*="blinkingCursor"] {
   color: var(--pastel-pink) !important;
 }
 
+.intro-subtitle {
+  margin-top: -36px;
+  font-family: "NTR", sans-serif;
+  color: var(--baby-blue);
+  text-align: center;
+  font-weight: 300;
+  font-size: 48px;
+}
+
+.intro-description {
+  color: var(--pink-glow);
+  font-family: "NTR", sans-serif;
+  font-size: 22px;
+  text-align: center;
+  max-width: 600px;
+  padding-bottom: 50px;
+}
+
+.intro-email {
+  margin-top: -36px !important;
+  font-family: "NTR", sans-serif !important;
+  font-weight: bold !important;
+  color: var(--baby-blue) !important;
+  border-color: var(--baby-blue) !important;
+}
+
+.intro-email:hover {
+  border-color: var(--baby-blue) !important;
+  background-color: var(--light-berry) !important;
+}
+
 /* For Phone Screen */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   #intro {
     min-height: unset;
     padding-left: unset;
@@ -40,7 +71,19 @@
   .intro-title {
     font-size: 46px;
   }
+
   .intro-name {
     font-size: 46px;
+  }
+
+  .intro-subtitle {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  .intro-description {
+    font-size: 18px;
+    max-width: unset;
+    padding-bottom: 40px;
   }
 }
