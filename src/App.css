@@ -1,6 +1,10 @@
 @import url("./styles/Global.css");
 
 /* For PC Screen */
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   font-family: "NTR";
   background-image: linear-gradient(var(--medium-berry), var(--dark-berry));

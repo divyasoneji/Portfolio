@@ -79,18 +79,20 @@ export const Intro = () => {
           <b> Simon Fraser University </b>and I'm fascinated by large-scale,
           high-impact products!
         </div>
-        <motion.div
-          animate={{
-            y: [0, -10, 0],
-          }}
-          transition={{
-            duration: 2,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        >
-          <KeyboardDoubleArrowDownIcon className="intro-go-down"></KeyboardDoubleArrowDownIcon>
-        </motion.div>
+        <a href="#about">
+          <motion.div
+            animate={{
+              y: [0, -10, 0],
+            }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          >
+            <KeyboardDoubleArrowDownIcon className="intro-go-down" />
+          </motion.div>
+        </a>
       </FadeInSection>
     </div>
   );
