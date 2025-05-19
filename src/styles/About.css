@@ -3,15 +3,13 @@
   min-height: 50vh;
   margin: auto;
   max-width: 1000px;
-  display: flex;
-  flex-direction: row;
 }
 
 .about-description {
   color: var(--pink-glow);
   font-family: "NTR", sans-serif;
   font-size: 22px;
-  text-align: center;
+  text-align: left;
   max-width: 650px;
   padding-bottom: 20px;
 }
@@ -20,6 +18,19 @@
   color: var(--cute-lime);
   font-weight: bold;
   text-decoration: none !important;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  vertical-align: center;
+}
+
+.about-gif {
+    width: 250px;
+    height: 250px;
+    opacity: 95%;
 }
 
 /* For Phone Screen */
@@ -34,5 +45,12 @@
   .about-description {
     font-size: 18px;
     padding-bottom: 50px;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: center;
   }
 }

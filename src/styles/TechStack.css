@@ -1,0 +1,27 @@
+.tech-stack-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-family: "NTR", sans-serif;
+  font-size: 20px;
+  color: var(--pink-glow);
+}
+
+#tech-stack ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 10px));
+}
+
+#tech-stack li {
+  position: relative;
+  padding-left: 25px;
+  font-size: 18px;
+  color: var(--pink-glow);
+}
+
+#tech-stack li::before {
+  content: "✿⁠";
+  color: var(--neon-pink);
+  position: absolute;
+  left: 0;
+}

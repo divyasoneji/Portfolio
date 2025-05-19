@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react";
 
 interface FadeInSectionProps {
   children: React.ReactNode;
+  delay?: string;
 }
 
-export const FadeInSection: React.FC<FadeInSectionProps> = ({ children }) => {
+export const FadeInSection: React.FC<FadeInSectionProps> = ({ children, delay }) => {
   const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
@@ -12,7 +13,10 @@ export const FadeInSection: React.FC<FadeInSectionProps> = ({ children }) => {
   }, []);
 
   return (
-    <section className={`fade-in-section ${isActive ? "is-active" : ""}`}>
+    <section
+      className={`fade-in-section ${isActive ? "is-active" : ""}`}
+      style={{ transitionDelay: delay || "0ms" }}
+    >
       {children}
     </section>
   );
