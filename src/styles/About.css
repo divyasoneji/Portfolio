@@ -22,24 +22,21 @@
 
 .about-content {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   justify-content: space-between;
   vertical-align: center;
 }
 
 .about-gif {
-    width: 250px;
-    height: 250px;
-    opacity: 95%;
+  width: 250px;
+  height: 250px;
+  opacity: 95%;
 }
 
 /* For Phone Screen */
 @media only screen and (max-width: 600px) {
   #about {
-    height: unset;
-    padding-left: unset;
-    padding-right: unset;
-    padding-top: 30%;
+    padding-top: 10%;
   }
 
   .about-description {
@@ -48,9 +45,12 @@
   }
 
   .about-content {
-    display: flex;
-    flex-direction: column; 
-    justify-content: space-between;
     align-items: center;
+  }
+
+  .about-gif {
+    width: 130px;
+    height: 130px;
+    opacity: 95%;
   }
 }

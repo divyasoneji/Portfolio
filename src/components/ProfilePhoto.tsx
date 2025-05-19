@@ -9,9 +9,14 @@ export const ProfilePhoto = () => {
       className="intro-profile-picture"
       src="/assets/me.PNG"
       alt="Divya Soneji"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
+      initial={{ boxShadow: "0px 0px 30px var(--neon-pink)"}}
+      animate={{
+        boxShadow: [
+          "0px 0px 100px var(--neon-pink)",
+          "0px 0px 30px var(--neon-pink)"
+        ],
+      }}
+      transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
     />
   );
 };

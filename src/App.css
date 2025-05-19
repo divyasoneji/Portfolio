@@ -1,7 +1,6 @@
 @import url("./styles/Global.css");
 
 /* For PC Screen */
-
 .App {
   font-family: "NTR";
   background-image: linear-gradient(var(--medium-berry), var(--dark-berry));
