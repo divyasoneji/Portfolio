@@ -1,9 +1,14 @@
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
-import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
-import { Button } from "@mui/material";
+import EmailIcon from "@mui/icons-material/Email";
+import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import { FadeInSection } from "./FadeInSection";
 import "../styles/Intro.css";
+import { ProfilePhoto } from "./ProfilePhoto";
+import SocialIconsContainer from "./SocialIconsContainer";
 
 export const Intro = () => {
   const [step, setStep] = useState(0);
@@ -13,15 +18,14 @@ export const Intro = () => {
     if (step === 0) {
       setTimeout(() => setStep(1), 1000); // Wait for "hi, i'm" to finish
     }
+    if (step === 1) {
+      setShowCursor(false);
+    }
   }, [step]);
 
   return (
     <div id="intro">
-      <img
-        src="/assets/cute-working-cat.gif"
-        alt="Hello!"
-        style={{ width: "200px", height: "auto" }}
-      />
+      <ProfilePhoto></ProfilePhoto>
       <span className="intro-title">
         <Typewriter
           words={["hi, i'm "]}
@@ -31,7 +35,6 @@ export const Intro = () => {
           typeSpeed={70}
           deleteSpeed={0}
           delaySpeed={0}
-          onLoopDone={() => setShowCursor(false)}
         />
         {step === 1 && (
           <span className="intro-name">
@@ -48,25 +51,46 @@ export const Intro = () => {
         )}
       </span>
       <FadeInSection>
-        <div className="intro-subtitle">welcome to my portfolio ☕︎</div>
+        <SocialIconsContainer>
+          <a
+            href="https://www.linkedin.com/in/divyasoneji/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <LinkedInIcon className="intro-social-icon"></LinkedInIcon>
+          </a>
+          <a
+            href="https://github.com/divyasoneji"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <GitHubIcon className="intro-social-icon"></GitHubIcon>
+          </a>
+          <a href="mailto:divya.soneji@hotmail.com">
+            <EmailIcon className="intro-social-icon"></EmailIcon>
+          </a>
+        </SocialIconsContainer>
         <div className="intro-description">
-          I'm a <strong>Software Engineer</strong> from Vancouver with{" "}
-          <strong>3 years</strong> of industry experience in developing and
-          maintaining scalable <strong>web</strong> and <strong>desktop</strong>{" "}
+          I'm a<b> Software Engineer </b>from Vancouver with
+          <b> 3 years </b>of industry experience in developing and maintaining
+          scalable<b> web </b>and <b> desktop </b>
           applications. I'm proficient in C#, .NET, TypeScript, React, and
-          Python. I hold a<strong> BSc. Degree in Computer Science</strong> from{" "}
-          <strong>Simon Fraser University</strong> and I'm strongly fascinated
-          by large-scale, high-impact products!
+          Python. I hold a<b> BSc. Degree in Computer Science </b>from
+          <b> Simon Fraser University </b>and I'm fascinated by large-scale,
+          high-impact products!
         </div>
-
-        <Button
-          className="intro-email"
-          variant="outlined"
-          startIcon={<EmailRoundedIcon />}
-          href="mailto:divya.soneji@hotmail.com"
+        <motion.div
+          animate={{
+            y: [0, -10, 0],
+          }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
         >
-          Let's Connect !
-        </Button>
+          <KeyboardDoubleArrowDownIcon className="intro-go-down"></KeyboardDoubleArrowDownIcon>
+        </motion.div>
       </FadeInSection>
     </div>
   );

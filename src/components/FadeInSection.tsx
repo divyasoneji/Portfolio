@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 interface FadeInSectionProps {
   children: React.ReactNode;
@@ -12,7 +12,7 @@ export const FadeInSection: React.FC<FadeInSectionProps> = ({ children }) => {
   }, []);
 
   return (
-    <section className={`fade-in-section ${isActive ? 'is-active' : ''}`}>
+    <section className={`fade-in-section ${isActive ? "is-active" : ""}`}>
       {children}
     </section>
   );

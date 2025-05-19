@@ -1,0 +1,38 @@
+/* For PC Screen */
+#about {
+  min-height: 50vh;
+  margin: auto;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
+}
+
+.about-description {
+  color: var(--pink-glow);
+  font-family: "NTR", sans-serif;
+  font-size: 22px;
+  text-align: center;
+  max-width: 650px;
+  padding-bottom: 20px;
+}
+
+.about-description a {
+  color: var(--cute-lime);
+  font-weight: bold;
+  text-decoration: none !important;
+}
+
+/* For Phone Screen */
+@media only screen and (max-width: 600px) {
+  #about {
+    height: unset;
+    padding-left: unset;
+    padding-right: unset;
+    padding-top: 30%;
+  }
+
+  .about-description {
+    font-size: 18px;
+    padding-bottom: 50px;
+  }
+}

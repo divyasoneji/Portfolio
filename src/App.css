@@ -1,4 +1,6 @@
-@import url('./styles/Global.css');
+@import url("./styles/Global.css");
+
+/* For PC Screen */
 
 .App {
   font-family: "NTR";
@@ -18,9 +20,28 @@
   transform: translateY(0);
 }
 
+.section-title {
+  font-family: "NTR", sans-serif;
+  color: var(--neon-pink);
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+}
+
 #components {
-  padding: 20px 10px;
+  padding: 50px 100px;
   width: 100vw;
   overflow-x: hidden;
   overflow-y: hidden;
+}
+
+/* For Phone Screen */
+@media only screen and (max-width: 800px) {
+  #components {
+    padding: 20px;
+  }
+
+  .section-title {
+    font-size: 40px;
+  }
 }
