@@ -1,20 +1,40 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 interface FadeInSectionProps {
   children: React.ReactNode;
   delay?: string;
 }
 
-export const FadeInSection: React.FC<FadeInSectionProps> = ({ children, delay }) => {
-  const [isActive, setIsActive] = useState(false);
+export const FadeInSection: React.FC<FadeInSectionProps> = ({
+  children,
+  delay,
+}) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
-    setIsActive(true);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting); // Will reset when it goes out of view
+      },
+      { threshold: 0.1 } // Adjust sensitivity as needed
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
   }, []);
 
   return (
     <section
-      className={`fade-in-section ${isActive ? "is-active" : ""}`}
+      ref={sectionRef}
+      className={`fade-in-section ${isVisible ? "is-active" : ""}`}
       style={{ transitionDelay: delay || "0ms" }}
     >
       {children}

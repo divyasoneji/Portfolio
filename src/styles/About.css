@@ -8,7 +8,7 @@
 .about-description {
   color: var(--pink-glow);
   font-family: "NTR", sans-serif;
-  font-size: 22px;
+  font-size: 26px;
   text-align: left;
   max-width: 650px;
   padding-bottom: 20px;
@@ -33,10 +33,23 @@
   opacity: 95%;
 }
 
+.about-grad-pic {
+  width: 500px;
+  height: 500px;
+  opacity: 95%;
+  padding: 30px;
+  border-radius: 50%;
+}
+
+.about-grad-pic:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
 /* For Phone Screen */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 720px) {
   #about {
-    padding-top: 10%;
+    padding-top: 30%;
   }
 
   .about-description {
@@ -46,11 +59,32 @@
 
   .about-content {
     align-items: center;
+    flex-direction: column;
   }
 
   .about-gif {
     width: 130px;
     height: 130px;
     opacity: 95%;
+  }
+
+  .about-grad-pic {
+    width: 250px;
+    height: 250px;
+    opacity: 95%;
+    padding: unset;
+    border-radius: 50%;
+  }
+}
+
+/* For Tablet Screen */
+@media only screen and (min-width: 720px) and (max-width: 1366px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-description {
+    font-size: 35px;
+    padding-bottom: 50px;
   }
 }

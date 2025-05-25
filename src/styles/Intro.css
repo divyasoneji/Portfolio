@@ -7,19 +7,26 @@
   margin: auto;
   max-width: 1000px;
   min-height: 100vh;
+  padding-top: 20px;
 }
 
 .intro-profile-picture {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   margin: 10px;
+  margin-bottom: 10px;
+}
+
+.intro-profile-picture:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
 }
 
 .intro-title {
   font-family: "NTR", sans-serif;
   color: var(--pastel-pink);
-  font-size: 55px;
+  font-size: 65px;
   margin-bottom: -25px;
 }
 
@@ -27,7 +34,7 @@
   font-family: "NTR", sans-serif;
   color: var(--cute-lime);
   font-weight: bold;
-  font-size: 55px;
+  font-size: 65px;
 }
 
 .intro-name [class*="blinkingCursor"] {
@@ -36,59 +43,113 @@
 
 .intro-social-icon {
   transition: all 0.1s ease-out;
-  margin: 5px;
+  margin: 6px;
   color: var(--neon-pink);
-  font-size: 40px !important;
+  font-size: 50px !important;
 }
 
 .intro-social-icon:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  transition: transform 0.1s ease-in-out;
 }
 
 .intro-description {
   color: var(--pink-glow);
   font-family: "NTR", sans-serif;
-  font-size: 22px;
+  font-size: 26px;
   text-align: center;
-  max-width: 650px;
-  padding-bottom: 20px;
+  max-width: 750px;
 }
 
 .intro-go-down {
+  padding-top: 20px;
   color: var(--cute-lime-fade);
-  font-size: 40px !important;
-}
-
-.intro-go-down:hover {
   font-size: 50px !important;
 }
 
+.intro-go-down:hover {
+  font-size: 60px !important;
+  transition: transform 0.3s ease-in-out !important;
+}
+
 /* For Phone Screen */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 720px) {
   #intro {
     min-height: unset;
-    padding-left: unset;
-    padding-top: unset;
+    padding-top: 25%;
     margin: 0;
     align-items: center;
   }
 
+  .intro-profile-picture {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
   .intro-title {
-    font-size: 46px;
+    font-size: 40px;
     margin-bottom: unset;
   }
 
   .intro-name {
-    font-size: 46px;
+    font-size: 40px;
   }
 
   .intro-social-icon {
-    font-size: 40px !important;
+    font-size: 30px !important;
   }
 
   .intro-description {
     font-size: 18px;
     max-width: unset;
-    padding-bottom: 50px;
+  }
+
+  .intro-go-down {
+    padding-top: 20%;
+    font-size: 30px !important;
+    padding-bottom: 20%;
+  }
+
+  .intro-go-down:hover {
+    font-size: 40px !important;
+  }
+}
+
+/* For Tablet Screen */
+@media only screen and (min-width: 720px) and (max-width: 1366px) {
+  #intro {
+    padding-top: 10%;
+    padding-left: unset;
+    padding-right: unset;
+  }
+
+  .intro-profile-picture {
+    width: 280px;
+    height: 280px;
+  }
+
+  .intro-title {
+    font-size: 70px;
+  }
+
+  .intro-name {
+    font-size: 70px;
+  }
+
+  .intro-social-icon {
+    font-size: 50px !important;
+  }
+
+  .intro-description {
+    padding-top: 5%;
+    font-size: 35px;
+    max-width: unset;
+  }
+
+  .intro-go-down {
+    padding-top: 10%;
+    font-size: 50px !important;
+    padding-bottom: 20%;
   }
 }

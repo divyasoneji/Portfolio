@@ -5,10 +5,10 @@ export const TechStack = () => {
   const tech_stack = [
     "C#",
     ".NET",
-    "Typescript",
+    "TypeScript",
     "React",
     "Python",
-    "Kotlin",
+    "JavaScript",
   ];
 
   return (

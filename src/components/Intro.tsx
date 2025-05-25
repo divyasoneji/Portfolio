@@ -16,7 +16,7 @@ export const Intro = () => {
 
   useEffect(() => {
     if (step === 0) {
-      setTimeout(() => setStep(1), 1000); // Wait for "hi, i'm" to finish
+      setTimeout(() => setStep(1), 1000); // Wait for "hi! i'm" to finish
     }
     if (step === 1) {
       setShowCursor(false);
@@ -28,7 +28,7 @@ export const Intro = () => {
       <ProfilePhoto></ProfilePhoto>
       <span className="intro-title">
         <Typewriter
-          words={["hi, i'm "]}
+          words={["hi! i'm "]}
           loop={1}
           cursor={showCursor}
           cursorStyle="|"
@@ -74,10 +74,9 @@ export const Intro = () => {
           I'm a<b> Software Engineer </b>from Vancouver with
           <b> 3 years </b>of industry experience in developing and maintaining
           scalable<b> web </b>and <b> desktop </b>
-          applications. I'm proficient in C#, .NET, TypeScript, React, and
-          Python. I hold a<b> BSc. Degree in Computer Science </b>from
-          <b> Simon Fraser University </b>and I'm fascinated by large-scale,
-          high-impact products!
+          applications. I specialize in C#, .NET, TypeScript, React, and Python
+          and am facinated by large-scale, high-impact products
+          that drive innovation!
         </div>
         <a href="#about">
           <motion.div

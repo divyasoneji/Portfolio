@@ -9,13 +9,13 @@
 #tech-stack ul {
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(2, minmax(150px, 10px));
+  grid-template-columns: repeat(2, minmax(250px, 20px));
 }
 
 #tech-stack li {
   position: relative;
-  padding-left: 25px;
-  font-size: 18px;
+  padding-left: 35px;
+  font-size: 25px;
   color: var(--pink-glow);
 }
 
@@ -24,4 +24,30 @@
   color: var(--neon-pink);
   position: absolute;
   left: 0;
+}
+
+/* For Phone Screen */
+@media only screen and (max-width: 720px) {
+  #tech-stack li {
+    font-size: 18px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+
+  #tech-stack ul {
+    grid-template-columns: repeat(2, minmax(150px, 10px));
+  }
+}
+
+/* For Tablet Screen */
+@media only screen and (min-width: 820px) and (max-width: 1366px) {
+  #tech-stack li {
+    font-size: 30px;
+    padding-left: 35px;
+    padding-bottom: 20px;
+  }
+
+  #tech-stack ul {
+    grid-template-columns: repeat(2, minmax(250px, 20px));
+  }
 }
