@@ -16,7 +16,8 @@
   position: relative;
   padding-left: 35px;
   font-size: 25px;
-  color: var(--pink-glow);
+  font-weight: bold;
+  color: var(--cute-lime-fade);
 }
 
 #tech-stack li::before {

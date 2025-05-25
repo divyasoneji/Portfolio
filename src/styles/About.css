@@ -15,7 +15,7 @@
 }
 
 .about-description a {
-  color: var(--cute-lime);
+  color: var(--cute-lime-fade);
   font-weight: bold;
   text-decoration: none !important;
 }
@@ -25,12 +25,6 @@
   flex-direction: row;
   justify-content: space-between;
   vertical-align: center;
-}
-
-.about-gif {
-  width: 250px;
-  height: 250px;
-  opacity: 95%;
 }
 
 .about-grad-pic {
@@ -62,18 +56,16 @@
     flex-direction: column;
   }
 
-  .about-gif {
-    width: 130px;
-    height: 130px;
-    opacity: 95%;
-  }
-
   .about-grad-pic {
     width: 250px;
     height: 250px;
     opacity: 95%;
     padding: unset;
     border-radius: 50%;
+  }
+
+  .matcha-container {
+    display: none;
   }
 }
 
@@ -86,5 +78,9 @@
   .about-description {
     font-size: 35px;
     padding-bottom: 50px;
+  }
+
+  .matcha-container {
+    display: none;
   }
 }

@@ -33,6 +33,9 @@ export const About = () => {
             <div className="about-description">
               Beyond code, I love unwinding with a cup of matcha and getting
               lost in sci-fi movies.
+              <div className="matcha-container">
+                <MatchaCheers></MatchaCheers>
+              </div>
             </div>
           </div>
 
