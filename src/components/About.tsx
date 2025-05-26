@@ -1,7 +1,7 @@
 import { FadeInSection } from "./FadeInSection";
-import "../styles/About.css";
 import { TechStack } from "./TechStack";
 import { MatchaCheers } from "./MatchaCheers";
+import "../styles/About.css";
 
 export const About = () => {
   return (

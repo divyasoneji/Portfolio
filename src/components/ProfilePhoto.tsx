@@ -9,11 +9,11 @@ export const ProfilePhoto = () => {
       className="intro-profile-picture"
       src="/assets/me.PNG"
       alt="Divya Soneji"
-      initial={{ boxShadow: "0px 0px 60px var(--neon-pink)"}}
+      initial={{ boxShadow: "0px 0px 130px var(--neon-pink-fade)" }}
       animate={{
         boxShadow: [
-          "0px 0px 120px var(--neon-pink)",
-          "0px 0px 60px var(--neon-pink)"
+          "0px 0px 80px var(--neon-pink-fade)",
+          "0px 0px 130px var(--neon-pink-fade)",
         ],
       }}
       transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}

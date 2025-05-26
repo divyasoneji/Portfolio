@@ -1,0 +1,77 @@
+/* For PC Screen */
+#experience {
+    min-height: 50vh;
+    margin: auto;
+    max-width: 1300px;
+}
+
+.experience-description {
+    font-family: "NTR", sans-serif;
+}
+
+.job-title {
+    color: var(--cute-lime-fade);
+    font-weight: bold !important;
+    font-size: 36px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.company-name {
+    color: var(--neon-pink-fade);
+    font-weight: bold !important;
+    font-size: 25px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.timeline-date {
+    color: var(--pink-glow);
+    font-weight: bold !important;
+    font-size: 26px !important;
+    padding-top: 0 !important;
+    opacity: 1 !important;
+}
+
+li {
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+    padding-left: 5px;
+}
+
+li::before {
+    content: "✿⁠";
+    color: var(--neon-pink);
+    position: absolute;
+    left: -30px;
+    padding-top: 3px;
+}
+
+ul {
+    list-style-type: none;
+    display: grid;
+}
+
+/* For Phone Screen */
+@media only screen and (max-width: 720px) {
+
+    .job-title {
+        font-size: 26px !important;
+    }
+
+    .company-name {
+        font-size: 20px !important;
+    }
+
+    .timeline-date {
+        font-weight: bold !important;
+        font-size: 19px !important;
+    }
+
+    li {
+        font-size: 18px;
+        font-weight: lighter;
+        padding-left: 1px;
+    }
+}
