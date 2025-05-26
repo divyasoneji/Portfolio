@@ -20,6 +20,10 @@
   text-decoration: none !important;
 }
 
+.about-description a:hover {
+  color: var(--cute-lime);
+}
+
 .about-content {
   display: flex;
   flex-direction: row;

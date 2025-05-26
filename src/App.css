@@ -7,7 +7,7 @@ html {
 
 .App {
   font-family: "NTR";
-  background-image: linear-gradient(var(--medium-berry), var(--dark-berry));
+  background-image: linear-gradient(var(--dark-berry), var(--medium-berry), var(--dark-berry));
   display: flex;
   margin: auto;
 }
@@ -36,6 +36,8 @@ html {
   width: 100vw;
   overflow-x: hidden;
   overflow-y: hidden;
+  position: relative;
+  z-index: 1;
 }
 
 /* For Phone Screen */
