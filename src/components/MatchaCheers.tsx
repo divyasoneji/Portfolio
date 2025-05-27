@@ -63,7 +63,7 @@ export const MatchaCheers: React.FC = () => {
           ease: "easeInOut",
         }}
       >
-        ← Hover
+        ← Hover to Cheers!
       </motion.div>
     </div>
   );

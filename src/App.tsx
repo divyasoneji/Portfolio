@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <DustParticlesBackground></DustParticlesBackground>
-      <div id="components">
+      <div id="sections">
         <Intro></Intro>
         <About></About>
         <Experience></Experience>

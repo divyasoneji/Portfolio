@@ -16,6 +16,12 @@ export const About = () => {
               seamless user interfaces.
             </div>
             <div className="about-description">
+              Over the course of my career, I’ve worked with a variety of tech
+              stacks and developed strong proficiency in the following
+              <b> languages:</b>
+            </div>
+            <TechStack></TechStack>
+            <div className="about-description">
               My journey started with a<b> BSc. Degree in Computer Science </b>
               from <a href="https://www.sfu.ca/"> Simon Fraser University</a>,
               where I developed a passion for contributing to meaningful
@@ -24,12 +30,6 @@ export const About = () => {
               passion to automating data processing workflows for their
               proprietary marine survey systems.
             </div>
-            <div className="about-description">
-              Over the course of my career, I’ve worked with a variety of tech
-              stacks and developed strong proficiency in the following
-              <b> languages:</b>
-            </div>
-            <TechStack></TechStack>
             <div className="about-description">
               Beyond code, I love unwinding with a cup of matcha and getting
               lost in sci-fi movies.

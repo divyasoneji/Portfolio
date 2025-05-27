@@ -31,7 +31,7 @@ html {
   display: flex;
 }
 
-#components {
+#sections {
   padding: 50px 100px;
   width: 100vw;
   overflow-x: hidden;
@@ -42,7 +42,7 @@ html {
 
 /* For Phone Screen */
 @media only screen and (max-width: 720px) {
-  #components {
+  #sections {
     padding: 30px;
   }
 

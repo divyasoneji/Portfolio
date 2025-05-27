@@ -6,9 +6,9 @@ import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrow
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { FadeInSection } from "./FadeInSection";
-import "../styles/Intro.css";
 import { ProfilePhoto } from "./ProfilePhoto";
 import SocialIconsContainer from "./SocialIconsContainer";
+import "../styles/Intro.css";
 
 export const Intro = () => {
   const [step, setStep] = useState(0);

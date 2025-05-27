@@ -3,7 +3,7 @@ export const experiences = [
     title: "Software Engineer",
     company_name: "Fugro | Houston (On-site)",
     date: "Apr 2023 - Present",
-    iconBg: "#f272c8",
+    iconBg: "var(--pastel-pink)",
     icon: "/assets/fugro-logo.png",
     points: [
       "Engineered high-performance Windows desktop applications (C# and .NET) responsible for large-scale LiDAR data processing and visualization workflows.",
@@ -18,7 +18,7 @@ export const experiences = [
     title: "Software Intern",
     company_name: "Fugro | Vancouver (Remote)",
     date: "May 2022 - Apr 2023",
-    iconBg: "#4db5ff",
+    iconBg: "var(--pastel-pink)",
     icon: "/assets/fugro-logo.png",
     points: [
       "Developed dynamic web applications using .NET, C#, and Angular to automate data acquisition and approval workflows for on-shore operations.",
