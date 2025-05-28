@@ -12,7 +12,7 @@ export const About = () => {
           <div>
             <div className="about-description">
               I thrive on making things easier for people — whether it’s
-              integrating CI/CD pipelines, optimizing performance, or crafting
+              automating CI/CD pipelines, optimizing performance, or crafting
               seamless user interfaces.
             </div>
             <div className="about-description">
@@ -31,19 +31,33 @@ export const About = () => {
               proprietary marine survey systems.
             </div>
             <div className="about-description">
-              Beyond code, I love unwinding with a cup of matcha and getting
-              lost in sci-fi movies.
+              Beyond code, I love unwinding with a cup of matcha, doodling
+              whatever comes to mind, and rewatching <i>The Office</i> for the
+              millionth time.
               <div className="matcha-container">
                 <MatchaCheers></MatchaCheers>
               </div>
             </div>
           </div>
-
-          <img
-            className="about-grad-pic"
-            src="/assets/sfu-grad-pic.png"
-            alt="Grad"
-          />
+          <div>
+            <div className="about-description" id="about-media">
+              <img
+                className="keyboard-gif"
+                src="/assets/keyboard.gif"
+                alt="Keyboard"
+              />
+              <img
+                className="about-grad-pic"
+                src="/assets/sfu-grad-pic.png"
+                alt="Grad"
+              />
+              <img
+                className="the-office-gif"
+                src="/assets/the-office.gif"
+                alt="The Office"
+              />
+            </div>
+          </div>
         </div>
       </FadeInSection>
     </div>

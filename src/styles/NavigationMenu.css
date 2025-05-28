@@ -16,8 +16,9 @@
     border-radius: 50%;
 }
 
-.menu-icon:hover, .menu-icon-close:hover{
+.menu-icon-open:hover, .menu-icon-close:hover{
     transform: scale(1.2) !important;
+    transition: transform 0.3s ease-in-out !important;
 }
 
 .bubble-container {

@@ -14,8 +14,8 @@
 
 #tech-stack li {
   position: relative;
-  padding-left: 35px;
-  font-size: 25px;
+  padding-left: 40px;
+  font-size: 30px;
   font-weight: bold;
   color: var(--cute-lime-fade);
 }
@@ -30,8 +30,8 @@
 /* For Phone Screen */
 @media only screen and (max-width: 720px) {
   #tech-stack li {
-    font-size: 18px;
-    padding-left: 20px;
+    font-size: 20px;
+    padding-left: 25px;
     padding-bottom: 20px;
   }
 
@@ -43,8 +43,8 @@
 /* For Tablet Screen */
 @media only screen and (min-width: 820px) and (max-width: 1366px) {
   #tech-stack li {
-    font-size: 30px;
-    padding-left: 35px;
+    font-size: 40px;
+    padding-left: 45px;
     padding-bottom: 20px;
   }
 

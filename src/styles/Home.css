@@ -69,14 +69,14 @@
 
 .intro-go-down:hover {
   font-size: 60px !important;
-  transition: transform 0.3s ease-in-out !important;
+  transition: transform 0.5s ease-in-out !important;
 }
 
 /* For Phone Screen */
 @media only screen and (max-width: 720px) {
   #home {
     min-height: unset;
-    padding-top: 15%;
+    padding-top: 0%;
     margin: 0;
     align-items: center;
   }
@@ -84,16 +84,16 @@
   .intro-profile-picture {
     width: 150px;
     height: 150px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
 
   .intro-title {
-    font-size: 40px;
-    margin-bottom: unset;
+    font-size: 200%;
+    margin-bottom: -10px;
   }
 
   .intro-name {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .intro-social-icon {
@@ -106,7 +106,7 @@
   }
 
   .intro-go-down {
-    padding-top: 20%;
+    padding-top: 5%;
     font-size: 30px !important;
     padding-bottom: 20%;
   }
@@ -119,14 +119,13 @@
 /* For Tablet Screen */
 @media only screen and (min-width: 720px) and (max-width: 1366px) {
   #home {
-    padding-top: 10%;
     padding-left: unset;
     padding-right: unset;
   }
 
   .intro-profile-picture {
-    width: 280px;
-    height: 280px;
+    width: 250px;
+    height: 250px;
   }
 
   .intro-title {
@@ -148,7 +147,7 @@
   }
 
   .intro-go-down {
-    padding-top: 10%;
+    padding-top: 5%;
     font-size: 50px !important;
     padding-bottom: 20%;
   }

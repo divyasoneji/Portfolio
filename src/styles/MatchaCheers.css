@@ -10,7 +10,7 @@
 .hover-text {
     position: absolute;
     top: 50%;
-    right: -80px;
+    right: -30px;
     font-size: 26px;
     opacity: 0.8;
     color: var(--pink-glow);
