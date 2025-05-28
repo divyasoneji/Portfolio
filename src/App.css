@@ -8,8 +8,8 @@ html {
 .App {
   font-family: "NTR";
   background-image: linear-gradient(var(--dark-berry), var(--medium-berry), var(--dark-berry));
-  display: flex;
   margin: auto;
+  flex-direction: column;
 }
 
 .fade-in-section {
@@ -33,7 +33,6 @@ html {
 
 #sections {
   padding: 50px 100px;
-  width: 100vw;
   overflow-x: hidden;
   overflow-y: hidden;
   position: relative;
