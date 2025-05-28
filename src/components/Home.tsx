@@ -7,10 +7,9 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { FadeInSection } from "./FadeInSection";
 import { ProfilePhoto } from "./ProfilePhoto";
-import SocialIconsContainer from "./SocialIconsContainer";
-import "../styles/Intro.css";
+import "../styles/Home.css";
 
-export const Intro = () => {
+export const Home = () => {
   const [step, setStep] = useState(0);
   const [showCursor, setShowCursor] = useState(true);
 
@@ -24,7 +23,7 @@ export const Intro = () => {
   }, [step]);
 
   return (
-    <div id="intro">
+    <div id="home">
       <ProfilePhoto></ProfilePhoto>
       <span className="intro-title">
         <Typewriter
@@ -51,7 +50,7 @@ export const Intro = () => {
         )}
       </span>
       <FadeInSection>
-        <SocialIconsContainer>
+        <div>
           <a
             href="https://www.linkedin.com/in/divyasoneji/"
             target="_blank"
@@ -69,7 +68,7 @@ export const Intro = () => {
           <a href="mailto:divya.soneji@hotmail.com">
             <EmailIcon className="intro-social-icon"></EmailIcon>
           </a>
-        </SocialIconsContainer>
+        </div>
         <div className="intro-description">
           I'm a<b> Software Engineer </b>from Vancouver with
           <b> 3 years </b>of industry experience in developing and maintaining

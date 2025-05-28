@@ -1,0 +1,64 @@
+/* For PC Screen */
+.navbar {
+    height: 0;
+}
+
+.menu-icon-open, .menu-icon-close {
+    color: var(--cute-lime);
+    position: fixed;
+    font-size: 40px !important;
+    cursor: pointer;
+    top: 25px;
+    left: 25px;
+    z-index: 101;
+    background: var(--dark-berry-fade);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.menu-icon:hover, .menu-icon-close:hover{
+    transform: scale(1.2) !important;
+}
+
+.bubble-container {
+    margin-top: 20px;
+    position: fixed;
+    background: var(--dark-berry-fade);
+    padding: 3px 20px;
+    border-radius: 20px;
+    color: var(--pink-glow);
+    box-shadow: var(--dark-berry);
+    z-index: 102;
+}
+
+.bubble-container:hover {
+    transform: scale(1.1) !important;
+}
+
+.bubble-container a {
+    text-decoration: none;
+    color: var(--pink-glow);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* For Phone Screen */
+@media only screen and (max-width: 720px) {
+    .menu-icon-open, .menu-icon-close {
+        font-size: 20px !important;
+        background: var(--dark-berry);
+    }
+
+    .bubble-container {
+        margin-top: unset;
+        padding: 2px 15px;
+        background: var(--dark-berry);
+    }
+    
+
+    .bubble-container a {
+        font-size: 15px;
+        color: var(--cute-lime-fade);
+    }
+
+}

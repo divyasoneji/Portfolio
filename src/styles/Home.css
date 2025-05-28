@@ -1,5 +1,5 @@
 /* For PC Screen */
-#intro {
+#home {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,7 +7,7 @@
   margin: auto;
   max-width: 1000px;
   min-height: 100vh;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .intro-profile-picture {
@@ -74,9 +74,9 @@
 
 /* For Phone Screen */
 @media only screen and (max-width: 720px) {
-  #intro {
+  #home {
     min-height: unset;
-    padding-top: 25%;
+    padding-top: 15%;
     margin: 0;
     align-items: center;
   }
@@ -118,7 +118,7 @@
 
 /* For Tablet Screen */
 @media only screen and (min-width: 720px) and (max-width: 1366px) {
-  #intro {
+  #home {
     padding-top: 10%;
     padding-left: unset;
     padding-right: unset;
