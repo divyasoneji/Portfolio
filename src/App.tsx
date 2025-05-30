@@ -4,6 +4,7 @@ import { DustParticlesBackground } from "./components/DustParticlesBackground";
 import { Experience } from "./components/Experience";
 import { Home } from "./components/Home";
 import { NavigationMenu } from "./components/NavigationMenu";
+import { TechStack } from "./components/TechStack";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <div id="sections">
         <Home></Home>
         <About></About>
+        <TechStack></TechStack>
         <Experience></Experience>
       </div>
     </div>

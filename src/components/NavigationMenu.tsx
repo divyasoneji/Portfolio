@@ -9,7 +9,7 @@ export const NavigationMenu: React.FC = () => {
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
-  const menuItems = ["Home", "About", "Experience", "Projects"];
+  const menuItems = ["Home", "About", "Tech Stack", "Experience", "Projects"];
 
   return (
     <nav className="navbar">
@@ -30,7 +30,7 @@ export const NavigationMenu: React.FC = () => {
             transition={{ delay: index * 0.15, duration: 0.4, type: "spring" }}
             style={{ top: `${80 + index * 60}px`, left: "20px" }}
           >
-            <a href={`#${item.toLowerCase()}`}>{item}</a>
+            <a href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}>{item}</a>
           </motion.div>
         ))}
     </nav>

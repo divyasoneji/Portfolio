@@ -11,14 +11,22 @@ export const Experience = () => {
   return (
     <div id="experience">
       <FadeInSection>
-        <div className="section-title">Experience</div>
-        <VerticalTimeline lineColor="var(--pink-glow)" animate={true}>
+        <div className="section-title" id="title">
+          Experience
+        </div>
+        <VerticalTimeline
+          lineColor="var(--pink-glow)"
+          animate={true}
+          layout="1-column-left"
+        >
           {experiences.map((experience) => (
             <VerticalTimelineElement
               contentStyle={{
+                width: "85%",
                 background: "var(--dark-berry-fade)",
-                borderRadius: "20px",
-                color: "var(--pink-glow)",
+                borderRadius: "10px",
+                color: "var(--pastel-pink)",
+                backdropFilter: "blur(2px)",
               }}
               contentArrowStyle={{
                 borderRight: "15px solid var(--dark-berry-fade)",

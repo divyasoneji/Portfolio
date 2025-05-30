@@ -7,7 +7,7 @@
   margin: auto;
   max-width: 1000px;
   min-height: 100vh;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .intro-profile-picture {
@@ -119,6 +119,7 @@
 /* For Tablet Screen */
 @media only screen and (min-width: 720px) and (max-width: 1366px) {
   #home {
+    padding-top: 10px;
     padding-left: unset;
     padding-right: unset;
   }

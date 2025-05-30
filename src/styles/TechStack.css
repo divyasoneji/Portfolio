@@ -1,3 +1,21 @@
+/* For PC Screen */
+#tech-stack {
+  min-height: 50vh;
+  margin: auto;
+  max-width: 1300px;
+  padding-bottom: 70px;
+  padding-top: 40px;
+}
+
+.description {
+  color: var(--pink-glow);
+  font-family: "NTR", sans-serif;
+  font-size: 26px;
+  text-align: left;
+  max-width: 700px;
+  padding-bottom: 20px;
+}
+
 .tech-stack-list {
   list-style-type: disc;
   padding-left: 20px;

@@ -1,40 +1,32 @@
 .matcha-cheers {
     display: flex;
+    flex-direction: row;
     justify-content: left;
-    padding: 30px 50px;
+    padding: 15px 20px;
     align-items: center;
-    gap: 0px;
     position: relative;
 }
 
-.hover-text {
-    position: absolute;
-    top: 50%;
-    right: -30px;
-    font-size: 26px;
-    opacity: 0.8;
-    color: var(--pink-glow);
-    white-space: nowrap;
-}
 .matcha {
-    width: 160px;
+    width: 100px;
+    opacity: 95%;
     cursor: pointer;
-}
-
-.matcha.left {
-    transform: rotate(-10deg);
-}
-
-.matcha.right {
-    transform: rotate(10deg);
 }
 
 .cheers-text {
     position: absolute;
-    top: -20px;
-    left: 50%;
+    top: -10px;
+    left: 25%;
     transform: translateX(-50%);
-    font-size: 24px;
+    font-size: 23px;
     font-weight: bold;
     color: var(--neon-pink);
+}
+
+.hover-text {
+    padding: 30px;
+    font-size: 23px;
+    opacity: 0.8;
+    color: var(--pink-glow);
+    white-space: nowrap;
 }

@@ -18,7 +18,7 @@ export const MatchaCheers: React.FC = () => {
         alt="Iced Matcha Latte"
         className="matcha left"
         animate={{
-          x: clinked ? 20 : -30,
+          x: clinked ? 20 : 0,
           y: clinked ? -15 : 0,
           scale: clinked ? 1.2 : 1,
           rotate: clinked ? -20 : -10,
@@ -32,7 +32,7 @@ export const MatchaCheers: React.FC = () => {
         alt="Iced Matcha Latte"
         className="matcha right"
         animate={{
-          x: clinked ? -20 : 30,
+          x: clinked ? -20 : 0,
           y: clinked ? -15 : 0,
           scale: clinked ? 1.2 : 1,
           rotate: clinked ? 20 : 10,
@@ -55,7 +55,7 @@ export const MatchaCheers: React.FC = () => {
       <motion.div
         className="hover-text"
         animate={{
-          y: [0, -10, 0],
+          x: [0, -10, 0],
         }}
         transition={{
           duration: 2,

@@ -13,13 +13,21 @@ export const TechStack = () => {
 
   return (
     <div id="tech-stack">
-      <ul className="tech-stack-list">
-        {tech_stack.map((tech, index) => (
-          <FadeInSection delay={`${index + 1}00ms`} key={index}>
-            <li>{tech}</li>
-          </FadeInSection>
-        ))}
-      </ul>
+      <FadeInSection>
+        <div className="section-title">Tech Stack</div>
+        <div className="description">
+          Over the course of my career, I’ve worked with a variety of tech
+          stacks and developed strong proficiency in the following
+          <b> languages:</b>
+        </div>
+        <ul className="tech-stack-list">
+          {tech_stack.map((tech, index) => (
+            <FadeInSection delay={`${index + 1}00ms`} key={index}>
+              <li>{tech}</li>
+            </FadeInSection>
+          ))}
+        </ul>
+      </FadeInSection>
     </div>
   );
 };
