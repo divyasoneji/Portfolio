@@ -1,6 +1,10 @@
-# Divya's Portfolio Website
+# Divya's Portfolio Website 💻
 
-### Welcome to my portfolio website, a creative space showcasing my background. 🌸 
+### Welcome to my portfolio website, a creative space showcasing my background 🌸 
+
+[🔗 **Link to live website**](https://divyasoneji.com)
+
+![Website Preview](/public/assets/website-screenshot.png)
 
 ## 🔧 Built using:  
 
@@ -10,7 +14,7 @@
 - **Three.js** – immersive animated background
 - **Google Fonts API** – typography  
 
-## 💻 How To Run:  
+## 🚗 How To Run:  
 
 ```sh
 git clone https://github.com/divyasoneji/Portfolio.git 
