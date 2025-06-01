@@ -16,7 +16,7 @@ export const projects: Record<string, ProjectProps> = {
   },
   CRADLE: {
     description:
-      "The Cradle VSA System is a life-saving healthcare solution designed to enhance prenatal healthcare in underserved regions like Uganda. Built with React (TypeScript) front-end and Flask(Python) back-end.",
+      "The Cradle VSA System is a life-saving healthcare solution designed to enhance prenatal healthcare in underserved regions like Uganda. Built with React (TypeScript) front-end and Flask (Python) back-end.",
     techStack: "React, TypeScript, Python, Flask, MySQL, AWS Cognito",
     gitHubLink: "https://github.com/drbfraser/CRADLE-Platform",
   },
