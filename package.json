@@ -21,6 +21,7 @@
     "@mui/icons-material": "^7.1.0",
     "@react-three/drei": "^10.0.8",
     "@react-three/fiber": "^9.1.2",
+    "@types/node": "^22.15.29",
     "@types/react": "^19.1.4",
     "@types/react-dom": "^19.1.2",
     "@types/react-vertical-timeline-component": "^3.3.6",
