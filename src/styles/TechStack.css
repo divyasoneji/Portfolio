@@ -66,16 +66,17 @@
 @media only screen and (max-width: 720px) {
   #tech-stack {
     padding-bottom: 30%;
+    padding-top: 10px;
   }
 
   #tech-stack-title {
-    justify-content: left;
+    justify-content: center;
   }
 
   #tech-stack li {
     font-size: 20px;
     padding-left: 25px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 
   #tech-stack ul {
@@ -83,11 +84,16 @@
   }
 
   .tech-stack-description {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .tech-stack-container {
     flex-direction: column;
+  }
+
+  .tech-stack-list{
+    padding-left: 10px;
+    margin: 0px;
   }
 
   .pc-pic {
