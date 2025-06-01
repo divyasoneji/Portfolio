@@ -6,9 +6,9 @@
     padding-bottom: 70px;
 }
 
-#title {
-    justify-content: left;
-    padding-left: 0%;
+#experience-title {
+    justify-content: left !important;
+    padding: 0px !important;
 }
 
 .experience-description {

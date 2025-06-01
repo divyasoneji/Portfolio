@@ -7,9 +7,8 @@
   padding-top: 60px;
 }
 
-#title {
-  justify-content: left;
-  padding-left: 3%;
+#about-title {
+  padding-left: 2% !important;
 }
 
 .about-content {
@@ -22,13 +21,13 @@
 .about-description-container {
   background-color: var(--dark-berry-fade);
   backdrop-filter: blur(2px);
-  border-radius: 3%;
-  padding: 30px;
+  border-radius: 5%;
+  padding: 50px;
   padding-bottom: 0px;
 }
 
 .about-description-container::before {
-  margin-left: -70px;
+  margin-left: -90px;
   margin-top: 150px;
   content: '';
   position: absolute;
@@ -40,8 +39,8 @@
   color: var(--pastel-pink);
   font-family: "NTR", sans-serif;
   font-size: 23px;
-  text-align: left;
-  max-width: 840px;
+  text-align: justify;
+  max-width: 800px;
   padding-bottom: 20px;
 }
 
@@ -76,8 +75,9 @@
     padding-bottom: 30%;
   }
 
-  #title {
-    justify-content: center;
+  #about-title {
+    justify-content: center !important;
+    padding-left: unset !important;
   }
 
   .matcha-container {
@@ -88,25 +88,35 @@
     flex-direction: row;
   }
 
-  .about-description {
-    font-size: 18px;
-  }
-
-  .about-grad-pic {
-    display: none;
+  .about-description-container {
+    padding: 0px;
+    border-radius: 2%;
+    background-color: unset;
+    backdrop-filter: unset;
   }
 
   .about-description-container::before {
+    display: none;
+  }
+
+  .about-description {
+    text-align: left;
+    font-size: 18px;
+    padding-left: 10px;
+    color: var(--pink-glow);
+  }
+
+  .about-grad-pic {
     display: none;
   }
 }
 
 /* For Tablet Screen */
 @media only screen and (min-width: 720px) and (max-width: 1366px) {
-  #title {
-      justify-content: center;
-    }
-  
+  #about-title {
+    justify-content: center !important;
+  }
+
   .matcha-container {
     display: none;
   }

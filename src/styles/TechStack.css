@@ -5,23 +5,7 @@
   max-width: 1300px;
   padding-bottom: 70px;
   padding-top: 40px;
-}
-
-.description {
-  color: var(--pink-glow);
-  font-family: "NTR", sans-serif;
-  font-size: 26px;
-  text-align: left;
-  max-width: 700px;
-  padding-bottom: 20px;
-}
-
-.tech-stack-list {
-  list-style-type: disc;
-  padding-left: 20px;
-  font-family: "NTR", sans-serif;
-  font-size: 20px;
-  color: var(--pink-glow);
+  padding-bottom: 200px;
 }
 
 #tech-stack ul {
@@ -45,8 +29,49 @@
   left: 0;
 }
 
+.tech-stack-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  vertical-align: center;
+  align-items: center;
+}
+
+.tech-stack-description {
+  color: var(--pink-glow);
+  font-family: "NTR", sans-serif;
+  font-size: 26px;
+  text-align: left;
+  max-width: 700px;
+  padding-bottom: 20px;
+}
+
+.tech-stack-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-family: "NTR", sans-serif;
+  font-size: 20px;
+  color: var(--pink-glow);
+}
+
+.pc-pic {
+  width: 500px;
+  height: 500px;
+  margin: 50px;
+  margin-top: 150px;
+  opacity: 85%;
+}
+
 /* For Phone Screen */
 @media only screen and (max-width: 720px) {
+  #tech-stack {
+    padding-bottom: 30%;
+  }
+
+  #tech-stack-title {
+    justify-content: left;
+  }
+
   #tech-stack li {
     font-size: 20px;
     padding-left: 25px;
@@ -56,17 +81,48 @@
   #tech-stack ul {
     grid-template-columns: repeat(2, minmax(150px, 10px));
   }
+
+  .tech-stack-description {
+    font-size: 22px;
+  }
+
+  .tech-stack-container {
+    flex-direction: column;
+  }
+
+  .pc-pic {
+    width: 250px;
+    height: 250px;
+    margin: 0px;
+  }
 }
 
 /* For Tablet Screen */
 @media only screen and (min-width: 820px) and (max-width: 1366px) {
+  #tech-stack {
+    padding-bottom: 0px;
+  }
+
   #tech-stack li {
-    font-size: 40px;
-    padding-left: 45px;
-    padding-bottom: 20px;
+    font-size: 24px;
+    padding-left: 30px;
   }
 
   #tech-stack ul {
     grid-template-columns: repeat(2, minmax(250px, 20px));
+  }
+
+  .tech-stack-description-container {
+    max-width: 400px;
+  }
+
+  .tech-stack-description {
+    font-size: 22px;
+  }
+
+  .pc-pic {
+    width: 280px;
+    height: 280px;
+    margin: 0px;
   }
 }

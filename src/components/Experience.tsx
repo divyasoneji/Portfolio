@@ -11,7 +11,7 @@ export const Experience = () => {
   return (
     <div id="experience">
       <FadeInSection>
-        <div className="section-title" id="title">
+        <div className="section-title" id="experience-title">
           Experience
         </div>
         <VerticalTimeline
@@ -27,9 +27,10 @@ export const Experience = () => {
                 borderRadius: "10px",
                 color: "var(--pastel-pink)",
                 backdropFilter: "blur(2px)",
+                marginLeft: "68px"
               }}
               contentArrowStyle={{
-                borderRight: "15px solid var(--dark-berry-fade)",
+                borderRight: "12px solid var(--dark-berry-fade)",
               }}
               date={experience.date}
               dateClassName="timeline-date"
@@ -40,6 +41,9 @@ export const Experience = () => {
                 justifyContent: "center",
                 alignItems: "center",
                 overflow: "hidden",
+                width: "55px",
+                height: "55px",
+                marginLeft: "-8px",
               }}
               icon={
                 <img

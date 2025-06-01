@@ -13,7 +13,7 @@ export const About = () => {
             alt="Grad"
           />
           <div>
-            <div className="section-title" id="title">
+            <div className="section-title" id="about-title">
               About Me
             </div>
             <div className="about-description-container">
