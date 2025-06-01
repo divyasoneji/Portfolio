@@ -4,11 +4,12 @@
   margin: auto;
   max-width: 1400px;
   padding-bottom: 70px;
-  padding-top: 60px;
+  padding-top: 35px;
 }
 
 #about-title {
   padding-left: 2% !important;
+  height: 100px !important;
 }
 
 .about-content {
@@ -18,7 +19,7 @@
   align-items: center;
 }
 
-.about-description-container {
+.about-description-chat-bubble {
   background-color: var(--dark-berry-fade);
   backdrop-filter: blur(2px);
   border-radius: 5%;
@@ -26,7 +27,7 @@
   padding-bottom: 0px;
 }
 
-.about-description-container::before {
+.about-description-chat-bubble::before {
   margin-left: -90px;
   margin-top: 150px;
   content: '';
@@ -39,7 +40,7 @@
   color: var(--pastel-pink);
   font-family: "NTR", sans-serif;
   font-size: 23px;
-  text-align: justify;
+  text-align: left;
   max-width: 800px;
   padding-bottom: 20px;
 }
@@ -55,8 +56,8 @@
 }
 
 .about-grad-pic {
-  width: 400px;
-  height: 400px;
+  width: 370px;
+  height: 370px;
   object-fit: cover;
   border-radius: 50%;
   margin-right: 50px;
@@ -78,6 +79,7 @@
   #about-title {
     justify-content: center !important;
     padding-left: unset !important;
+    height: unset !important;
   }
 
   .matcha-container {
@@ -88,19 +90,18 @@
     flex-direction: row;
   }
 
-  .about-description-container {
+  .about-description-chat-bubble {
     padding: 0px;
     border-radius: 2%;
     background-color: unset;
     backdrop-filter: unset;
   }
 
-  .about-description-container::before {
+  .about-description-chat-bubble::before {
     display: none;
   }
 
   .about-description {
-    text-align: left;
     font-size: 18px;
     padding-left: 10px;
     color: var(--pink-glow);
@@ -115,6 +116,7 @@
 @media only screen and (min-width: 720px) and (max-width: 1366px) {
   #about-title {
     justify-content: center !important;
+    height: unset !important;
   }
 
   .matcha-container {
@@ -133,7 +135,7 @@
     display: none;
   }
 
-  .about-description-container::before {
+  .about-description-chat-bubble::before {
     display: none;
   }
 }

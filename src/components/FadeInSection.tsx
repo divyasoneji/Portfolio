@@ -17,7 +17,7 @@ export const FadeInSection: React.FC<FadeInSectionProps> = ({
       ([entry]) => {
         setIsVisible(entry.isIntersecting); // Will reset when it goes out of view
       },
-      { threshold: 0.02 } // Adjust sensitivity as needed
+      { threshold: 0.02 }
     );
 
     if (sectionRef.current) {

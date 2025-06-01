@@ -1,0 +1,13 @@
+#footer {
+    display: flex;
+    align-items: center;
+}
+
+.acknowledgments {
+    font-family: "NTR", sans-serif;
+    color: var(--pink-glow);
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    padding-bottom: 40px;
+}

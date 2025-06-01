@@ -1,0 +1,200 @@
+/* For PC Screen */
+#projects {
+    min-height: 50vh;
+    margin: auto;
+    max-width: 1300px;
+    padding-bottom: 70px;
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+
+.projects-grid {
+    list-style-type: none !important;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-gap: 30px;
+    padding: 0px;
+}
+
+.projects-grid li:before {
+    content: none !important;
+}
+
+.projects-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: default;
+    height: 91%;
+    background-color: var(--light-berry);
+    box-shadow: 3px 5px 1px var(--pink-glow);
+    border-radius: 2%;
+    padding: 2rem 1.75rem;
+    padding-bottom: 1.2rem;
+}
+
+.project-card-header {
+    margin-top: -43px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.25em 0 !important;
+    border-bottom: none !important;
+}
+
+.folder-icon {
+    font-size: 53px !important;
+    color: var(--neon-pink);
+}
+
+.github-icon,
+.website-icon {
+    margin-top: 6px !important;
+    font-size: 36px !important;
+    color: var(--cute-lime);
+}
+
+.website-icon {
+    margin-left: 10px;
+    font-size: 36px !important;
+}
+
+.github-icon:hover,
+.website-icon:hover {
+    cursor: pointer;
+    color: var(--pink-glow);
+    transform: scale(1.15) !important;
+    transition: transform 0.1s ease-in-out !important;
+}
+
+.project-card-title {
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--pastel-pink);
+}
+
+.project-card-description {
+    font-size: 22px;
+    color: var(--pink-glow);
+}
+
+.project-card-tech-stack {
+    margin-top: 40px;
+    font-size: 18px;
+    color: var(--cute-lime);
+}
+
+@media (max-width: 1080px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 60px;
+    }
+}
+
+.project-card-title {
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--pastel-pink);
+}
+
+.project-card-description {
+    font-size: 22px;
+    color: var(--pink-glow);
+}
+
+.project-card-tech-stack {
+    margin-top: 40px;
+    font-size: 18px;
+    color: var(--cute-lime);
+}
+
+@media (max-width: 1080px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 60px;
+    }
+}
+
+/* For Phone Screen */
+@media only screen and (max-width: 720px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 80px;
+    }
+
+    .folder-icon {
+        font-size: 45px !important;
+    }
+
+    .github-icon,
+    .website-icon {
+        margin-top: 6px !important;
+        font-size: 30px !important;
+        color: var(--cute-lime);
+    }
+
+    .website-icon {
+        margin-left: 10px;
+        font-size: 31px !important;
+    }
+
+    .project-card-title {
+        font-size: 26px;
+        font-weight: bold;
+        color: var(--pastel-pink);
+    }
+
+    .project-card-description {
+        font-size: 18px;
+        color: var(--pink-glow);
+    }
+
+    .project-card-tech-stack {
+        margin-top: 20px;
+        font-size: 17px;
+        color: var(--cute-lime);
+    }
+}
+
+/* For Tablet Screen */
+@media only screen and (min-width: 820px) and (max-width: 1366px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 60px;
+        grid-column-gap: 30px;
+        ;
+    }
+
+    .folder-icon {
+        font-size: 45px !important;
+    }
+
+    .github-icon,
+    .website-icon {
+        margin-top: 6px !important;
+        font-size: 30px !important;
+        color: var(--cute-lime);
+    }
+
+    .website-icon {
+        margin-left: 10px;
+        font-size: 31px !important;
+    }
+
+    .project-card-title {
+        font-size: 26px;
+        font-weight: bold;
+        color: var(--pastel-pink);
+    }
+
+    .project-card-description {
+        font-size: 18px;
+        color: var(--pink-glow);
+    }
+
+    .project-card-tech-stack {
+        margin-top: 20px;
+        font-size: 17px;
+        color: var(--cute-lime);
+    }
+}

@@ -1,17 +1,9 @@
+import { motion } from "framer-motion";
+import { tech_stack } from "../constants/tech-stack";
 import { FadeInSection } from "./FadeInSection";
 import "../styles/TechStack.css";
-import { motion } from "framer-motion";
 
 export const TechStack = () => {
-  const tech_stack = [
-    "C#",
-    ".NET",
-    "TypeScript",
-    "React",
-    "Python",
-    "JavaScript",
-  ];
-
   return (
     <div id="tech-stack">
       <FadeInSection>
@@ -22,8 +14,8 @@ export const TechStack = () => {
             </div>
             <div className="tech-stack-description">
               Over the course of my career, I’ve worked with a variety of tech
-              stacks and developed strong proficiency in the following
-              <b> languages:</b>
+              stacks & I specialize in the following
+              <b> languages</b> and <b>frameworks:</b>
             </div>
             <ul className="tech-stack-list">
               {tech_stack.map((tech, index) => (

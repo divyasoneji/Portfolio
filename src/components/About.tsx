@@ -16,7 +16,7 @@ export const About = () => {
             <div className="section-title" id="about-title">
               About Me
             </div>
-            <div className="about-description-container">
+            <div className="about-description-chat-bubble">
               <div className="about-description">
                 I thrive on making things easier for people — whether it’s
                 automating CI/CD pipelines, optimizing performance, or crafting

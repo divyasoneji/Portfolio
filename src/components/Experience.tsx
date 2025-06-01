@@ -27,7 +27,7 @@ export const Experience = () => {
                 borderRadius: "10px",
                 color: "var(--pastel-pink)",
                 backdropFilter: "blur(2px)",
-                marginLeft: "68px"
+                marginLeft: "68px",
               }}
               contentArrowStyle={{
                 borderRight: "12px solid var(--dark-berry-fade)",
