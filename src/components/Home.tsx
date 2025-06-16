@@ -71,7 +71,7 @@ export const Home = () => {
         </div>
         <div className="intro-description">
           I'm a<b> Software Engineer </b>from Vancouver with
-          <b> 3 years </b>of industry experience in developing and maintaining
+          <b> 2+ years </b>of industry experience in developing and maintaining
           scalable<b> web </b>and <b> desktop </b>
           applications. I specialize in C#, .NET, TypeScript, React, and Python
           and I'm facinated by large-scale, high-impact products that drive
