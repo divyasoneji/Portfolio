@@ -2,7 +2,7 @@ export const experiences = [
   {
     title: "Software Engineer",
     company_name: "Fugro | Houston (On-site)",
-    date: "May 2022 - Present",
+    date: "April 2023 - Present",
     iconBg: "var(--pastel-pink)",
     icon: "/assets/fugro-logo.png",
     points: [
@@ -18,7 +18,7 @@ export const experiences = [
   {
     title: "Software Intern",
     company_name: "Fugro | Vancouver (Remote)",
-    date: "May 2022 - Apr 2023",
+    date: "May 2022 - April 2023",
     iconBg: "var(--pastel-pink)",
     icon: "/assets/fugro-logo.png",
     points: [
