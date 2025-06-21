@@ -13,8 +13,9 @@
 
 .company-logo {
     object-fit: cover;
-    width: 46px;
-    height: 20px;
+    margin-top: 5px;
+    width: 41px;
+    height: 18px;
 }
 
 .experience-description {

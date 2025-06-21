@@ -37,6 +37,7 @@ export const Experience = () => {
               iconStyle={{
                 background: experience.iconBg,
                 borderRadius: "50%",
+                boxShadow: " inset 0 0 0 2px var(--pink-glow)",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
