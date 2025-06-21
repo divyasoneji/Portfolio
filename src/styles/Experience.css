@@ -40,8 +40,9 @@
 }
 
 li {
-    font-size: 22px;
+    font-size: 19px;
     position: relative;
+    font-weight: lighter;
     padding-left: 5px;
 }
 
@@ -75,8 +76,7 @@ ul {
     }
 
     li {
-        font-size: 18px;
-        font-weight: lighter;
+        font-size: 16px;
         padding-left: 1px;
     }
 }
