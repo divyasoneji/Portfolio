@@ -13,6 +13,7 @@
 - **Framer Motion** – element animation 
 - **Three.js** – immersive animated background
 - **Google Fonts API** – typography  
+- **Vercel** – hosting  
 
 ## 🚗 How To Run:  
 
