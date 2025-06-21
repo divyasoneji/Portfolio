@@ -1,8 +1,8 @@
 # Divya's Portfolio Website 💻
 
-### Welcome to my portfolio website, a creative space showcasing my background 🌸 
+### Welcome to my portfolio website, a creative space showcasing my background! 🌸 
 
-[🔗 **Link to live website**](https://divyasoneji.com)
+🔗 [**Link to live website**](https://divyasoneji.com)
 
 ![Website Preview](/public/assets/website-screenshot.png)
 
