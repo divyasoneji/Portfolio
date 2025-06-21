@@ -11,6 +11,12 @@
     padding: 0px !important;
 }
 
+.company-logo {
+    object-fit: cover;
+    width: 46px;
+    height: 20px;
+}
+
 .experience-description {
     font-family: "NTR", sans-serif;
 }

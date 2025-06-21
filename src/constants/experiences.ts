@@ -3,7 +3,7 @@ export const experiences = [
     title: "Software Engineer",
     company_name: "Fugro | Houston (On-site)",
     date: "April 2023 - Present",
-    iconBg: "var(--pastel-pink)",
+    iconBg: "var(--pink-white)",
     icon: "/assets/fugro-logo.png",
     points: [
       "Automated CI/CD pipelines using GitHub Actions, streamlining deployment and testing workflows across multiple projects.",
@@ -20,7 +20,7 @@ export const experiences = [
     title: "Software Intern",
     company_name: "Fugro | Vancouver (Remote)",
     date: "May 2022 - April 2023",
-    iconBg: "var(--pastel-pink)",
+    iconBg: "var(--pink-white)",
     icon: "/assets/fugro-logo.png",
     points: [
       "Increased code coverage by over 25% with NUnit tests (C#).",

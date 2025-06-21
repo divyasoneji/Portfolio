@@ -47,9 +47,9 @@ export const Experience = () => {
               }}
               icon={
                 <img
+                  className="company-logo"
                   src={experience.icon}
                   alt={experience.company_name}
-                  className="rounded-full object-contain"
                 />
               }
             >
