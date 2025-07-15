@@ -74,7 +74,7 @@ export const Home = () => {
           <b> 2+ years </b>of industry experience in developing and maintaining
           scalable<b> web </b>and <b> desktop </b>
           applications. I specialize in C#, .NET, TypeScript, React, and Python
-          and I'm facinated by large-scale, high-impact products that drive
+          and I'm fascinated by large-scale, high-impact products that drive
           innovation!
         </div>
         <a href="#about">
