@@ -7,7 +7,6 @@
   margin: auto;
   max-width: 1000px;
   min-height: 100vh;
-  padding-top: 1%;
 }
 
 .intro-profile-picture {
@@ -26,7 +25,7 @@
 .intro-title {
   font-family: "NTR", sans-serif;
   color: var(--pastel-pink);
-  font-size: 65px;
+  font-size: 60px;
   margin-bottom: -25px;
 }
 
@@ -34,7 +33,7 @@
   font-family: "NTR", sans-serif;
   color: var(--cute-lime);
   font-weight: bold;
-  font-size: 65px;
+  font-size: 60px;
 }
 
 .intro-name [class*="blinkingCursor"] {
@@ -93,7 +92,7 @@
   }
 
   .intro-name {
-    font-size: 35px;
+    font-size: 1em !important;
   }
 
   .intro-social-icon {
@@ -117,11 +116,12 @@
 }
 
 /* For Tablet Screen */
-@media only screen and (min-width: 720px) and (max-width: 1366px) {
+@media only screen and (min-width: 720px) and (max-width: 1200px) {
   #home {
     padding-top: 10px;
     padding-left: unset;
     padding-right: unset;
+    padding-top: 10%;
   }
 
   .intro-profile-picture {
@@ -143,7 +143,7 @@
 
   .intro-description {
     padding-top: 5%;
-    font-size: 35px;
+    font-size: 30px;
     max-width: unset;
   }
 
@@ -151,5 +151,43 @@
     padding-top: 5%;
     font-size: 50px !important;
     padding-bottom: 20%;
+  }
+}
+
+/* Other */
+@media only screen and (min-width: 1200px) and (max-height: 600px) {
+  #home {
+    padding-left: unset;
+    padding-right: unset;
+    padding-top: unset;
+  }
+
+  .intro-profile-picture {
+    width: 10em;
+    height: 10em;
+  }
+
+  .intro-title,
+  .intro-name {
+    font-size: 40px;
+  }
+
+  .intro-social-icon {
+    font-size: 2.5em !important;
+  }
+
+  .intro-description {
+    font-size: 1.1em;
+    max-width: 600px;
+  }
+
+  .intro-go-down {
+    padding-top: 3%;
+    font-size: 2em !important;
+    padding-bottom: 25%;
+  }
+
+  .intro-go-down:hover {
+    font-size: 2.5em !important;
   }
 }

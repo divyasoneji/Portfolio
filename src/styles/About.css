@@ -1,5 +1,8 @@
 /* For PC Screen */
 #about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   min-height: 50vh;
   margin: auto;
   max-width: 1400px;
@@ -112,7 +115,7 @@
   }
 }
 
-/* For Tablet Screen */
+/* For Tablet Screen (Small) */
 @media only screen and (min-width: 720px) and (max-width: 1000px) {
   #about-title {
     justify-content: center !important;
@@ -128,7 +131,7 @@
   }
 
   .about-description {
-    font-size: 28px;
+    font-size: 25px;
   }
 
   .about-grad-pic {
@@ -137,5 +140,33 @@
 
   .about-description-chat-bubble::before {
     display: none;
+  }
+}
+
+/* For Tablet Screen (Large) */
+@media only screen and (min-width: 720px) and (max-width: 1366px) {
+  .matcha-container {
+    display: none;
+  }
+}
+
+/* Other */
+@media only screen and (min-width: 1200px) and (max-height: 600px) {
+  #about {
+    padding-top: unset;
+  }
+
+  .about-description-chat-bubble {
+    padding: 20px 51px;
+    padding-bottom: 0px;
+  }
+
+  .about-description {
+    font-size: 15px;
+    max-width: 600px;
+  }
+
+  .matcha-container {
+    display: flex;
   }
 }

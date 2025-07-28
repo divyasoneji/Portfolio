@@ -55,15 +55,15 @@
 }
 
 .pc-pic {
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 450px;
   margin: 50px;
   margin-top: 150px;
   opacity: 85%;
 }
 
 /* For Phone Screen */
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 820px) {
   #tech-stack {
     padding-bottom: 30%;
     padding-top: 10px;
@@ -91,7 +91,7 @@
     flex-direction: column;
   }
 
-  .tech-stack-list{
+  .tech-stack-list {
     padding-left: 10px;
     margin: 0px;
   }
@@ -129,6 +129,17 @@
   .pc-pic {
     width: 280px;
     height: 280px;
+    margin: 0px;
+  }
+}
+
+/* Other */
+@media only screen and (min-width: 1200px) and (max-height: 600px) {
+  .pc-pic {
+    padding-top: 35%;
+    padding-left: 0%;
+    width: 400px;
+    height: 400px;
     margin: 0px;
   }
 }
