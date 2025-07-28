@@ -2,13 +2,13 @@
     display: flex;
     flex-direction: row;
     justify-content: left;
-    padding: 15px 20px;
+    padding: 20px;
     align-items: center;
     position: relative;
 }
 
 .matcha {
-    width: 100px;
+    width: 4em;
     opacity: 95%;
     cursor: pointer;
 }
@@ -16,7 +16,7 @@
 .cheers-text {
     position: absolute;
     top: -10px;
-    left: 25%;
+    left: 20%;
     transform: translateX(-50%);
     font-size: 23px;
     font-weight: bold;

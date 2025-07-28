@@ -23,7 +23,7 @@
   background-color: var(--dark-berry-fade);
   backdrop-filter: blur(2px);
   border-radius: 5%;
-  padding: 50px;
+  padding: 30px 50px;
   padding-bottom: 0px;
 }
 
@@ -39,9 +39,9 @@
 .about-description {
   color: var(--pastel-pink);
   font-family: "NTR", sans-serif;
-  font-size: 23px;
+  font-size: 20px;
   text-align: left;
-  max-width: 800px;
+  max-width: 830px;
   padding-bottom: 20px;
 }
 
@@ -56,8 +56,8 @@
 }
 
 .about-grad-pic {
-  width: 370px;
-  height: 370px;
+  width: 15em;
+  height: 15em;
   object-fit: cover;
   border-radius: 50%;
   margin-right: 50px;
@@ -113,7 +113,7 @@
 }
 
 /* For Tablet Screen */
-@media only screen and (min-width: 720px) and (max-width: 1366px) {
+@media only screen and (min-width: 720px) and (max-width: 1000px) {
   #about-title {
     justify-content: center !important;
     height: unset !important;

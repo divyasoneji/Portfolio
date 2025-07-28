@@ -7,12 +7,12 @@
   margin: auto;
   max-width: 1000px;
   min-height: 100vh;
-  padding-top: 20px;
+  padding-top: 1%;
 }
 
 .intro-profile-picture {
-  width: 250px;
-  height: 250px;
+  width: 230px;
+  height: 230px;
   border-radius: 50%;
   margin: 10px;
   margin-bottom: 10px;
@@ -56,7 +56,7 @@
 .intro-description {
   color: var(--pink-glow);
   font-family: "NTR", sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   text-align: center;
   max-width: 750px;
 }
